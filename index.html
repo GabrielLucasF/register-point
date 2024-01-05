@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Ponto</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="app" class="container">
+        <h1>Sistema de Ponto da Yasmin</h1>
+        <div class="ponto-container">
+            <p id="clock" class="datetime-box"></p>
+            <button onclick="registrarPonto()" class="ponto-button">Registrar Ponto</button>
+            <button onclick="apagarRegistros()" class="apagar-button">Apagar Registros</button>
+            <ul id="registros" class="registros-list"></ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

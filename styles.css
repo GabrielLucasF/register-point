@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #add8e6; /* Cor de fundo azul bebê */
+}
+
+.container {
+    text-align: center;
+    max-width: 600px;
+    margin: auto;
+    padding: 20px; /* Adiciona alguma margem interna */
+    box-sizing: border-box; /* Evita que as bordas e o preenchimento alterem o tamanho real do contêiner */
+}
+
+.ponto-container {
+    background-color: #ffffff; /* Cor de fundo branca */
+    padding: 20px;
+    border-radius: 10px; /* Borda arredondada */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    margin-top: 20px;
+}
+
+.datetime-box {
+    background-color: #f0f0f0; /* Cor de fundo cinza claro para a caixa de data e hora */
+    padding: 10px;
+    border-radius: 5px; /* Borda arredondada */
+}
+
+.ponto-button {
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px; /* Borda arredondada */
+    background-color: #007bff; /* Cor de fundo azul claro que combina com o fundo */
+    color: #fff; /* Cor do texto branco */
+}
+
+.apagar-button{
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px; /* Borda arredondada */
+    background-color: #ff0000; /* Cor de fundo azul claro que combina com o fundo */
+    color: #fff;
+}
+
+.registros-list {
+    list-style-type: none;
+    padding: 0;
+    max-height: 100%;
+    overflow-y: auto;
+}
+
+li {
+    margin: 5px;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #ddd; /* Cor da linha separadora */
+    margin: 10px 0;
+}
+
+h1 {
+    padding: 10px;
+    display: inline-block;
+    border-radius: 10px; /* Borda arredondada para parecer mais uma placa */
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.8); /* Contorno mais suave */
+    color: #fff; /* Cor do texto branca */
+    background-color: #007bff; /* Cor de fundo azul mais forte */
+    margin-bottom: 10px; /* Reduzi o espaçamento inferior */
+    font-size: 1.8em; /* Tamanho da fonte ajustado */
+}
+
+/* Regra de mídia para ajustar o layout em dispositivos menores */
+@media (max-width: 600px) {
+    .container {
+        max-width: 100%; /* Define a largura máxima para 100% em telas menores */
+    }
+}
